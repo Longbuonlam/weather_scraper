@@ -7,9 +7,9 @@ import time
 
 # List of provinces in Vietnam with latitude and longitude
 provinces = [
-    # {"name": "Hà Nội", "latitude": 21.0285, "longitude": 105.8544},
-    # {"name": "TP. Hồ Chí Minh", "latitude": 10.7769, "longitude": 106.7009},
-    # {"name": "Đà Nẵng", "latitude": 16.0544, "longitude": 108.2022},
+    {"name": "Hà Nội", "latitude": 21.0285, "longitude": 105.8544},
+    {"name": "TP. Hồ Chí Minh", "latitude": 10.7769, "longitude": 106.7009},
+    {"name": "Đà Nẵng", "latitude": 16.0544, "longitude": 108.2022},
     {"name": "Hải Phòng", "latitude": 20.8449, "longitude": 106.6881},
     {"name": "Cần Thơ", "latitude": 10.0452, "longitude": 105.7469},
     {"name": "An Giang", "latitude": 10.5216, "longitude": 105.1259},
@@ -143,7 +143,7 @@ def get_weather_data(province, start_date, end_date):
 
 for province in provinces:
     print(f"Fetching weather data for {province['name']}...")
-    get_weather_data(province, "2023-01-01", "2023-12-31")  # Adjust the date range as needed here
+    get_weather_data(province, "2024-01-01", "2024-12-31")  # Adjust the date range as needed here
     count += 1
     print(f"Processed {count}/{total_provinces} provinces")
     time.sleep(10)  # Sleep for 10 seconds to avoid hitting the API rate limit
