@@ -143,7 +143,7 @@ def get_weather_data(province, start_date, end_date):
 
 for province in provinces:
     print(f"Fetching weather data for {province['name']}...")
-    get_weather_data(province, "2021-01-01", "2021-12-31")  # Adjust the date range as needed here
+    get_weather_data(province, "2022-01-01", "2022-12-31")  # Adjust the date range as needed here
     count += 1
     print(f"Processed {count}/{total_provinces} provinces")
     time.sleep(10)  # Sleep for 10 seconds to avoid hitting the API rate limit
